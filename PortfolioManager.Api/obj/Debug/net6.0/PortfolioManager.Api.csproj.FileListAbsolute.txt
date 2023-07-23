@@ -1,0 +1,12 @@
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\bin\Debug\net6.0\PortfolioManager.Api.deps.json
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\bin\Debug\net6.0\PortfolioManager.Api.dll
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\bin\Debug\net6.0\PortfolioManager.Api.pdb
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\obj\Debug\net6.0\PortfolioManager.Api.csproj.AssemblyReference.cache
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\obj\Debug\net6.0\PortfolioManager.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\obj\Debug\net6.0\PortfolioManager.Api.AssemblyInfoInputs.cache
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\obj\Debug\net6.0\PortfolioManager.Api.AssemblyInfo.cs
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\obj\Debug\net6.0\PortfolioManager.Api.csproj.CoreCompileInputs.cache
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\obj\Debug\net6.0\PortfolioManager.Api.dll
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\obj\Debug\net6.0\refint\PortfolioManager.Api.dll
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\obj\Debug\net6.0\PortfolioManager.Api.pdb
+C:\GitHubZaloha\PortfolioManager\PortfolioManager.Api\obj\Debug\net6.0\ref\PortfolioManager.Api.dll

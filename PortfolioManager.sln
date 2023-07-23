@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioManager", "PortfolioManager\PortfolioManager.csproj", "{B08AA2AC-9CA1-4F10-BCB1-8DF52ADE8037}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioManager.Api", "PortfolioManager.Api\PortfolioManager.Api.csproj", "{86255ADE-CCC0-4633-96D0-D26C0CDE8E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioManager.Data", "PortfolioManager.Data\PortfolioManager.Data.csproj", "{52632B69-B126-459B-A5F7-A2B374A85EC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B08AA2AC-9CA1-4F10-BCB1-8DF52ADE8037}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B08AA2AC-9CA1-4F10-BCB1-8DF52ADE8037}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B08AA2AC-9CA1-4F10-BCB1-8DF52ADE8037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86255ADE-CCC0-4633-96D0-D26C0CDE8E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86255ADE-CCC0-4633-96D0-D26C0CDE8E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86255ADE-CCC0-4633-96D0-D26C0CDE8E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86255ADE-CCC0-4633-96D0-D26C0CDE8E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52632B69-B126-459B-A5F7-A2B374A85EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52632B69-B126-459B-A5F7-A2B374A85EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52632B69-B126-459B-A5F7-A2B374A85EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52632B69-B126-459B-A5F7-A2B374A85EC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
