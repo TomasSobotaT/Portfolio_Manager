@@ -1,0 +1,36 @@
+﻿@model PortfolioManager.Models.AccountViewModels.LoginViewModel;
+
+
+
+@{
+	ViewData["title"] = "Přihlášení";
+}
+
+
+
+<form class="border border-dark" method="post">
+	<div asp-validation-summary="All" class="text-danger"></div>
+
+	<div class="mb-3">
+		<label asp-for="Email"></label>
+		<input asp-for="Email" class="form-control" />
+		<span asp-validation-for="Email"></span>
+	</div>
+
+	<div class="mb-3">
+		<label asp-for="Password"></label>
+		<input asp-for="Password" class="form-control" />
+		<span asp-validation-for="Password"></span>
+	</div>
+
+	<div class="mb-3">
+		<label asp-for="RememberMe" class="form-check-label">
+			<input asp-for="RememberMe" class="form-check-input" />
+		</label>
+	</div>
+
+	<div class="mb-3">
+		<button class="btn btn-dark" type="submit">Přihlásit se</button>
+	</div>
+
+</form>
