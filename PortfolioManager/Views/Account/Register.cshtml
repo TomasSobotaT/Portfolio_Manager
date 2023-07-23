@@ -1,0 +1,36 @@
+﻿@model PortfolioManager.Models.AccountViewModels.RegisterViewModel;
+
+
+
+@{
+	ViewData["title"] = "Registrace";
+}
+
+
+
+<form class="border border-dark" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+	<div asp-validation-summary="All" class="text-danger"></div>
+
+	<div class="mb-3">
+		<label asp-for="Email"></label>
+		<input asp-for="Email" class="form-control" />
+		<span asp-validation-for="Email"></span>
+	</div>
+
+	<div class="mb-3">
+		<label asp-for="Password"></label>
+		<input asp-for="Password" class="form-control" />
+		<span asp-validation-for="Password"></span>
+	</div>
+
+	<div class="mb-3">
+		<label asp-for="ConfirmPassword"></label>
+		<input asp-for="ConfirmPassword" class="form-control" />
+		<span asp-validation-for="ConfirmPassword"></span>
+	</div>
+
+	<div class="mb-3">
+		<button class="btn btn-dark" type="submit">Registrace</button>
+	</div>
+
+</form>
