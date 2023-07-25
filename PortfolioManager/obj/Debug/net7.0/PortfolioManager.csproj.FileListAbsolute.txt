@@ -85,3 +85,4 @@ C:\GitHubZaloha\PortfolioManager\PortfolioManager\obj\Debug\net7.0\refint\Portfo
 C:\GitHubZaloha\PortfolioManager\PortfolioManager\obj\Debug\net7.0\PortfolioManager.pdb
 C:\GitHubZaloha\PortfolioManager\PortfolioManager\obj\Debug\net7.0\PortfolioManager.genruntimeconfig.cache
 C:\GitHubZaloha\PortfolioManager\PortfolioManager\obj\Debug\net7.0\ref\PortfolioManager.dll
+C:\GitHubZaloha\PortfolioManager\PortfolioManager\bin\Debug\net7.0\Newtonsoft.Json.dll
