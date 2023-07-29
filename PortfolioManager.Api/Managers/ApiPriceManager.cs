@@ -1,10 +1,10 @@
 ﻿using Newtonsoft.Json;
 using PortfolioManager.Api.Interfaces;
-using PortfolioManager.Api.Models.ApiModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -39,15 +39,14 @@ namespace PortfolioManager.Api.Managers
 
             if (response.IsSuccessStatusCode)
             {
-                string  jsonString = await response.Content.ReadAsStringAsync();
+                string jsonString = await response.Content.ReadAsStringAsync();
                 var result = JsonConvert.DeserializeObject<Dictionary<string, Crypto>>(jsonString);
 
                 if (result is null)
-                    throw new ArgumentNullException(nameof(result),"Chyba při volání API Coingecko.");
-
+                    throw new ArgumentNullException(nameof(result), "Chyba při volání API Coingecko.");
 
                 return result.First().Value.czk;
-               
+
             }
             else
             {

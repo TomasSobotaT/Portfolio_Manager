@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 namespace PortfolioManager.Data.Models
 {
     /// <summary>
-    /// historical data for API - prices of crypto 
+    /// historical data for API - prices of crypto czk/usd
     /// </summary>
     public class HistoricData
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key]
         public int Id { get; set; }
-        public DateOnly Date { get; set; }
-        public decimal BitcoinPrice { get; set; }
-        public decimal EthereumPrice { get; set; }
-        public decimal PolygonPrice { get; set; }
-        public decimal CosmosPrice { get; set; }
-        public decimal MadleyPrice { get; set; }
+
+        public string Name { get; set; } = "";
+        public DateTime Date { get; set; }
+        public decimal PriceCZK { get; set; }
+        public decimal PriceUSD { get; set; }
+  
 
     }
 }

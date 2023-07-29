@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PortfolioManager.Api.Models.ApiModels
+namespace PortfolioManager.Api
 {
     /// <summary>
     /// class represents cryptoasset for deserialization

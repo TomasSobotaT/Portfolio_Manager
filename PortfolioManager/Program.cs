@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using PortfolioManager.Api.Interfaces;
 using PortfolioManager.Api.Managers;
 using PortfolioManager.Data;
+using PortfolioManager.Data.Interfaces;
+using PortfolioManager.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,8 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IApiPriceManager, ApiPriceManager>();
+builder.Services.AddScoped<IHistoricDataApiRepository, HistoricDataAPiRepository>();
+
 
 var app = builder.Build();
 
