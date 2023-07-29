@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OEGvdy2dPOVM/2elRj8I+oXQObCS8t8XbHra6BqM3VThTXriQ39JVmHumELKmZ6OCXpxCFfAeILcpnF/XaGVYQ==",
+  "dgSpecHash": "9EEXs7jk7axl82nvyQYTCMqfhZA+AsuRGIMFLP6jM1kTOADourWqm7wnPniGSwiuYLRUt0ELTVmk7r1F/BKzWg==",
   "success": true,
-  "projectFilePath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager\\PortfolioManager.csproj",
+  "projectFilePath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\PortfolioManager.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tsobo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\tsobo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -13,7 +15,7 @@
     "C:\\Users\\tsobo\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.10\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.10\\microsoft.aspnetcore.identity.ui.6.0.10.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\tsobo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\tsobo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",

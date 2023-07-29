@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0zEbk1+RAIg1BeC9oKLsvxulPcq8cskqGz3q9svO1hva5tC0qARwIh2k1F6hYWb29iWcY4b4rRE9nLlNYV+9/w==",
+  "dgSpecHash": "chyWAkiEeOZWXP00NWs6uG32vgWJWqlhSaUtuUKyky+BQmVvw+cmITu1Gr1hg5lOCweGLE++9XHaNR3IEi8/nQ==",
   "success": true,
-  "projectFilePath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
+  "projectFilePath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tsobo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

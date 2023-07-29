@@ -3911,11 +3911,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
+      "projectUniqueName": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
       "projectName": "PortfolioManager.Data",
-      "projectPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
+      "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
       "packagesPath": "C:\\Users\\tsobo\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\obj\\",
+      "outputPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tsobo\\AppData\\Roaming\\NuGet\\NuGet.Config",

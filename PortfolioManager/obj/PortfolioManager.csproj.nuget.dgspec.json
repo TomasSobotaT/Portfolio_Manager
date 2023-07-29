@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager\\PortfolioManager.csproj": {}
+    "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\PortfolioManager.csproj": {}
   },
   "projects": {
-    "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Api\\PortfolioManager.Api.csproj": {
+    "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Api\\PortfolioManager.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Api\\PortfolioManager.Api.csproj",
+        "projectUniqueName": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Api\\PortfolioManager.Api.csproj",
         "projectName": "PortfolioManager.Api",
-        "projectPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Api\\PortfolioManager.Api.csproj",
+        "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Api\\PortfolioManager.Api.csproj",
         "packagesPath": "C:\\Users\\tsobo\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Api\\obj\\",
+        "outputPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tsobo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +27,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj": {
+                "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -40,6 +44,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.Extensions.Http": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -69,14 +77,14 @@
         }
       }
     },
-    "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\PortfolioManager.Data.csproj": {
+    "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
+        "projectUniqueName": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
         "projectName": "PortfolioManager.Data",
-        "projectPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
+        "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj",
         "packagesPath": "C:\\Users\\tsobo\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\obj\\",
+        "outputPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tsobo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,14 +170,14 @@
         }
       }
     },
-    "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager\\PortfolioManager.csproj": {
+    "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\PortfolioManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager\\PortfolioManager.csproj",
+        "projectUniqueName": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\PortfolioManager.csproj",
         "projectName": "PortfolioManager",
-        "projectPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager\\PortfolioManager.csproj",
+        "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\PortfolioManager.csproj",
         "packagesPath": "C:\\Users\\tsobo\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager\\obj\\",
+        "outputPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tsobo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -187,11 +195,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Api\\PortfolioManager.Api.csproj": {
-                "projectPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Api\\PortfolioManager.Api.csproj"
+              "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Api\\PortfolioManager.Api.csproj": {
+                "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Api\\PortfolioManager.Api.csproj"
               },
-              "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\PortfolioManager.Data.csproj": {
-                "projectPath": "C:\\GitHubZaloha\\PortfolioManager\\PortfolioManager.Data\\PortfolioManager.Data.csproj"
+              "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj": {
+                "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj"
               }
             }
           }

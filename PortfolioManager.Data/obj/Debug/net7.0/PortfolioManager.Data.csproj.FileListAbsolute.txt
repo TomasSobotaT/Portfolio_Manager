@@ -12,3 +12,17 @@ C:\GitHubZaloha\PortfolioManager\PortfolioManager.Data\obj\Debug\net7.0\refint\P
 C:\GitHubZaloha\PortfolioManager\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.pdb
 C:\GitHubZaloha\PortfolioManager\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.genruntimeconfig.cache
 C:\GitHubZaloha\PortfolioManager\PortfolioManager.Data\obj\Debug\net7.0\ref\PortfolioManager.Data.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\bin\Debug\net7.0\PortfolioManager.Data.deps.json
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\bin\Debug\net7.0\PortfolioManager.Data.runtimeconfig.json
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\bin\Debug\net7.0\PortfolioManager.Data.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\bin\Debug\net7.0\PortfolioManager.Data.pdb
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.csproj.AssemblyReference.cache
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.AssemblyInfoInputs.cache
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.AssemblyInfo.cs
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.csproj.CoreCompileInputs.cache
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\refint\PortfolioManager.Data.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.pdb
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\PortfolioManager.Data.genruntimeconfig.cache
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Data\obj\Debug\net7.0\ref\PortfolioManager.Data.dll

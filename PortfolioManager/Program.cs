@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PortfolioManager.Api.Interfaces;
 using PortfolioManager.Api.Managers;
+using PortfolioManager.Api;
 using PortfolioManager.Data;
 using PortfolioManager.Data.Interfaces;
 using PortfolioManager.Data.Repositories;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +26,10 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IApiPriceManager, ApiPriceManager>();
 builder.Services.AddScoped<IHistoricDataApiRepository, HistoricDataAPiRepository>();
+builder.Services.AddScoped<IHistoricDataManager, HistoricDataManager>();
 
+
+builder.Services.AddAutoMapper(typeof(AutomapperConfiguration));
 
 var app = builder.Build();
 

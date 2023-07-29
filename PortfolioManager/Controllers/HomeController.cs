@@ -20,7 +20,7 @@ namespace PortfolioManager.Controllers
 
         public async Task<IActionResult> Index()
         {
-            ViewBag.Cena =  await _priceManager.GetActuallPriceAsync();
+            ViewBag.Cena = await _priceManager.GetActuallPriceAsync("bitcoin", "czk");
             return View();
         }
 
