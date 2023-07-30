@@ -19,6 +19,8 @@ namespace PortfolioManager.Data.Models
         public string Name { get; set; } = "";
 
         public double Amount { get; set; }
+
+        [Column(TypeName = "decimal(18,5)")]
         public decimal InvestedMoney { get; set; }  
 
 
