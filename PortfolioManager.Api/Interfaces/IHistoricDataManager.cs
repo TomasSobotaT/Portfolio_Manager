@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace PortfolioManager.Api.Interfaces
 {
+   
     public interface IHistoricDataManager
     {
         IEnumerable<HistoricDataDto> GetAll();
