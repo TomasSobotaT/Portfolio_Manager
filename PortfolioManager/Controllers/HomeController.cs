@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PortfolioManager.Api.Interfaces;
 using PortfolioManager.Api.Managers;
-using PortfolioManager.Models;
 using System.Diagnostics;
 
 namespace PortfolioManager.Controllers

@@ -9,6 +9,6 @@ namespace PortfolioManager.Data.Interfaces
 {
     public interface IHistoricDataApiRepository : IBaseApiRepository<HistoricData>
     {
-
+      
     }
 }

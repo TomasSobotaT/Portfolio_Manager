@@ -9,6 +9,7 @@ using PortfolioManager.Data.Repositories;
 using AutoMapper;
 using Microsoft.OpenApi.Models;
 using static System.Net.WebRequestMethods;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,8 +29,8 @@ builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options => options.SwaggerDoc("crypto", new OpenApiInfo
-    {
+builder.Services.AddSwaggerGen(options => { options.SwaggerDoc("crypto", new OpenApiInfo
+{
     Version = "v1",
     Title = "Portfolio manager API",
     Description = "Webové API pro projekt Portfolio Manager vytvoøený pomocí technologie ASP.NET CORE MVC.",
@@ -38,7 +39,14 @@ builder.Services.AddSwaggerGen(options => options.SwaggerDoc("crypto", new OpenA
         Name = "Kontakt",
         Url = new Uri("https://www.tsobota.cz")
     }
-    }));
+});
+
+
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    //options.IncludeXmlComments(xmlPath);
+
+});
 
 
 builder.Services.AddScoped<IApiPriceManager, ApiPriceManager>();

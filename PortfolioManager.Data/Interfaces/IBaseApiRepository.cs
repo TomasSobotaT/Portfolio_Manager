@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PortfolioManager.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,13 +10,11 @@ namespace PortfolioManager.Data.Interfaces
     public interface IBaseApiRepository<T> where T : class
     {
         IEnumerable<T> GetAll();    
-        T? Get(string Name,DateTime date);
-        void Delete(string name, DateTime date);
-        void Update(T entity);
-        void Insert(T entity);
+        void Delete(T entity);
+        T? Update(T entity);
+        T? Insert(T entity);
         bool Exists(string Name, DateTime date);
-
-
-
+        IEnumerable<T> GetByName(string name);
+        T? Get(string Name,DateTime date);
     }
 }

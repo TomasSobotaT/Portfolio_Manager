@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PortfolioManager.Data.Interfaces;
+using PortfolioManager.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,12 +19,9 @@ namespace PortfolioManager.Data.Repositories
             dbSet = applicationDbContext.Set<T>();
         }
 
-        public virtual void Delete(string name, DateTime date)
+        public virtual void Delete(T entity)
         {
-            T? entity = dbSet.Find(name, date);
-
-            if (entity is null)
-                return;
+        
 
             try
             {
@@ -35,8 +33,8 @@ namespace PortfolioManager.Data.Repositories
             catch
             {
                 applicationDbContext.Entry(entity).State = EntityState.Unchanged;
-                throw;
             }
+           
         }
 
         public virtual bool Exists(string Name, DateTime date)
@@ -49,27 +47,36 @@ namespace PortfolioManager.Data.Repositories
             return true;
         }
 
-        public virtual T? Get(string name, DateTime date)
+        public virtual T Get(string name, DateTime date)
         {
             T? entity = dbSet.Find(name,date);
             return entity;
         }
-
+        public virtual IEnumerable<T> GetByName(string name)
+        {
+            return dbSet.Where(x=>x.ToString()==name);
+        }
         public virtual IEnumerable<T> GetAll()
         {
             return dbSet.ToList();
         }
 
-        public virtual void Insert(T entity)
+        public virtual T Insert(T entity)
         {
             dbSet.Add(entity);
             applicationDbContext.SaveChanges();
+            return entity;
         }
 
-        public virtual void Update(T entity)
+      
+        public virtual T Update(T entity)
         {
+            if (entity is null)
+                return null;
+
             dbSet.Update(entity);
             applicationDbContext.SaveChanges();
+            return entity;
         }
     }
 }

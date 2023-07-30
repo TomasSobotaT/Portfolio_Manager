@@ -8,19 +8,36 @@ using System.Threading.Tasks;
 
 namespace PortfolioManager.Data.Repositories
 {
-    public class HistoricDataAPiRepository :BaseApiRepository<HistoricData>, IHistoricDataApiRepository
+    public class HistoricDataAPiRepository : BaseApiRepository<HistoricData>, IHistoricDataApiRepository
     {
-        public HistoricDataAPiRepository(ApplicationDbContext applicationDbContext):base(applicationDbContext) { }
+        public HistoricDataAPiRepository(ApplicationDbContext applicationDbContext) : base(applicationDbContext) { }
 
+        public override bool Exists(string name, DateTime date)
+        {
+            bool result = dbSet.Any(x => (x.Name  == name && x.Date == date));
+            return result;
+        }
 
-        public override HistoricData? Get(string name, DateTime date)
+        public override HistoricData Get(string name, DateTime date)
+        {
+
+            
+            HistoricData? result = base.dbSet
+                .Where(x => (x.Name == name && x.Date == date))
+                .FirstOrDefault();
+
+          
+
+            return result;
+        }
+
+        public override IEnumerable<HistoricData> GetByName(string name)
         {
             return base.dbSet
-                .Where(x => (x.Date == date && x.Name == name))
-                .FirstOrDefault();          
-               
+                .Where(x => (x.Name == name)).ToList();
         }
-    }
 
+
+    }
    
 }

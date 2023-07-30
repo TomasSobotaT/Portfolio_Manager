@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using PortfolioManager.Models.AccountViewModels;
+using PortfolioManager.Data.Models.AccountViewModels;
 
 namespace PortfolioManager.Controllers
 {
