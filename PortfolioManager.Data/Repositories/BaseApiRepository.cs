@@ -18,7 +18,7 @@ namespace PortfolioManager.Data.Repositories
             dbSet = applicationDbContext.Set<T>();
         }
 
-        public void Delete(string name, DateTime date)
+        public virtual void Delete(string name, DateTime date)
         {
             T? entity = dbSet.Find(name, date);
 
@@ -39,9 +39,9 @@ namespace PortfolioManager.Data.Repositories
             }
         }
 
-        public bool Exists(string Name, DateTime date, string currency)
+        public virtual bool Exists(string Name, DateTime date)
         {
-            T? entity = dbSet.Find(Name, date, currency);
+            T? entity = dbSet.Find(Name, date);
 
             if (entity == null)
                 return false;
@@ -49,24 +49,24 @@ namespace PortfolioManager.Data.Repositories
             return true;
         }
 
-        public T? Get(string name, DateTime date, string currency)
+        public virtual T? Get(string name, DateTime date)
         {
-            T? entity = dbSet.Find(name, date, currency);
+            T? entity = dbSet.Find(name,date);
             return entity;
         }
 
-        public IEnumerable<T> GetAll()
+        public virtual IEnumerable<T> GetAll()
         {
             return dbSet.ToList();
         }
 
-        public void Insert(T entity)
+        public virtual void Insert(T entity)
         {
             dbSet.Add(entity);
             applicationDbContext.SaveChanges();
         }
 
-        public void Update(T entity)
+        public virtual void Update(T entity)
         {
             dbSet.Update(entity);
             applicationDbContext.SaveChanges();

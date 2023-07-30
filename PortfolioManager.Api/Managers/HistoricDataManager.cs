@@ -31,5 +31,12 @@ namespace PortfolioManager.Api.Managers
             return mapper.Map<List<HistoricDataDto>>(historicData);
         }
 
+
+        public HistoricDataDto Get(string name, DateTime date)
+        { 
+            HistoricData record = historicDataAPiRepository.Get(name, date);
+            return mapper.Map<HistoricDataDto>(record);
+        }
+
     }
 }

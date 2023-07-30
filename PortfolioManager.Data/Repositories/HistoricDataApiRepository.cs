@@ -12,5 +12,15 @@ namespace PortfolioManager.Data.Repositories
     {
         public HistoricDataAPiRepository(ApplicationDbContext applicationDbContext):base(applicationDbContext) { }
 
+
+        public override HistoricData? Get(string name, DateTime date)
+        {
+            return base.dbSet
+                .Where(x => (x.Date == date && x.Name == name))
+                .FirstOrDefault();          
+               
+        }
     }
+
+   
 }
