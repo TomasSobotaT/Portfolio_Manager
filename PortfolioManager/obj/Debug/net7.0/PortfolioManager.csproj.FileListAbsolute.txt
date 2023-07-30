@@ -176,3 +176,7 @@ C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\o
 C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\obj\Debug\net7.0\PortfolioManager.pdb
 C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\obj\Debug\net7.0\PortfolioManager.genruntimeconfig.cache
 C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\obj\Debug\net7.0\ref\PortfolioManager.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll

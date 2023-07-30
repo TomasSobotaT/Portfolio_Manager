@@ -7,6 +7,8 @@ using PortfolioManager.Data;
 using PortfolioManager.Data.Interfaces;
 using PortfolioManager.Data.Repositories;
 using AutoMapper;
+using Microsoft.OpenApi.Models;
+using static System.Net.WebRequestMethods;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +26,21 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllers();
 builder.Services.AddControllersWithViews();
 
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options => options.SwaggerDoc("crypto", new OpenApiInfo
+    {
+    Version = "v1",
+    Title = "Portfolio manager API",
+    Description = "Webové API pro projekt Portfolio Manager vytvoøený pomocí technologie ASP.NET CORE MVC.",
+    Contact = new OpenApiContact
+    {
+        Name = "Kontakt",
+        Url = new Uri("https://www.tsobota.cz")
+    }
+    }));
+
+
 builder.Services.AddScoped<IApiPriceManager, ApiPriceManager>();
 builder.Services.AddScoped<IHistoricDataApiRepository, HistoricDataAPiRepository>();
 builder.Services.AddScoped<IHistoricDataManager, HistoricDataManager>();
@@ -36,6 +53,11 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseSwagger();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("crypto/swagger.json", "Portfolio Manager - v1");
+    });
     app.UseMigrationsEndPoint();
 }
 else
