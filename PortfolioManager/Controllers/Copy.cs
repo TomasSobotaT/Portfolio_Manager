@@ -22,31 +22,6 @@
      
 //        }
 
-//        // GET: Commodities
-//        public async Task<IActionResult> Index()
-//        {
-//              return _context.Commodity != null ? 
-//                          View(await _context.Commodity.ToListAsync()) :
-//                          Problem("Entity set 'PortfolioManagerContext.Commodity'  is null.");
-//        }
-
-//        // GET: Commodities/Details/5
-//        public async Task<IActionResult> Details(int? id)
-//        {
-//            if (id == null || _context.Commodity == null)
-//            {
-//                return NotFound();
-//            }
-
-//            var commodity = await _context.Commodity
-//                .FirstOrDefaultAsync(m => m.Id == id);
-//            if (commodity == null)
-//            {
-//                return NotFound();
-//            }
-
-//            return View(commodity);
-//        }
 
 //        // GET: Commodities/Create
 //        public IActionResult Create()

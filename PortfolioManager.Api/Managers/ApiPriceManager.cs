@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using PortfolioManager.Api.Interfaces;
+using PortfolioManager.Api;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace PortfolioManager.Api.Managers
     {
 
         private readonly IHttpClientFactory _httpClientFactory;
+        private const string metalApiKey = "3667754A97583BBA6F4E8EEC1AE9E24C06DF1C5E";
 
         public ApiPriceManager(IHttpClientFactory httpClientFactory)
         {
@@ -25,16 +27,16 @@ namespace PortfolioManager.Api.Managers
         }
 
         /// <summary>
-        /// The asynchronous method gets the price of the specified cryptocurrency in the specified currency
+        /// The asynchronous method gets the price of the specified cryptocurrency in the specified currency from coingecko.com API
         /// </summary>
         /// <param name="cryptoName">Name of crypto you want</param>
         /// <param name="currency">Currency in which you want to see the value of cryptos (czk/usd)</param>
         /// <returns>decimal value of crypto price</returns>
         /// <exception cref="Exception"></exception>
-        public async Task<decimal> GetActuallPriceAsync(string cryptoName = "bitcoin", string currency = "czk")
+        public async Task<decimal> GetActuallCryptoPriceAsync(string cryptoName = "bitcoin", string currency = "czk")
         {
 
-            using HttpClient client = _httpClientFactory.CreateClient();
+            HttpClient client = _httpClientFactory.CreateClient();
 
             Uri jsonUrl = new Uri($"https://api.coingecko.com/api/v3/simple/price?ids={cryptoName.ToLower().Trim()}&vs_currencies={currency.ToLower().Trim()}");
 
@@ -62,7 +64,48 @@ namespace PortfolioManager.Api.Managers
 
         }
 
+        /// <summary>
+        /// The asynchronous method gets the price of the specified metal in USD (gold or silver) from api.freegoldprice.org
+        /// </summary>
+        /// <param name="metalName"> silver / gold</param>
+        /// <returns>decimal value of metal price</returns>
+        public async Task<decimal?> GetActuallMetalPriceAsync(string metalName)
+        {
 
+            HttpClient client = _httpClientFactory.CreateClient();
+            
+            Uri jsonUrl = new Uri($"https://api.freegoldprice.org/request.cfm?key={metalApiKey}&action=GSJ");
+
+            var response = await client.GetAsync(jsonUrl);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string jsonString = await response.Content.ReadAsStringAsync();
+
+                Metal? result = JsonConvert.DeserializeObject<Metal>(jsonString);
+
+                if (result is null)
+                    return 0;
+
+               
+                    switch (metalName) 
+                {
+                    case "gold":
+                        return result?.GSJ?.Gold?.USD?.Ask;
+                    case "silver":
+                        return result?.GSJ?.Silver?.USD?.Ask;
+                    default:
+                        return 0;
+                }
+            
+
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
 
     }
 }

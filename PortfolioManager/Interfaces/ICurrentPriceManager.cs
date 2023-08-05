@@ -2,7 +2,8 @@
 {
     public interface ICurrentPriceManager
     {
-        Task<decimal> GetCurrentPriceAsync();
-        Task<decimal> GetCurrentPriceAsync(string cryptoName, string currency = "czk");
+        Task<decimal> GetCurrentCryptoPriceAsync();
+        Task<decimal> GetCurrentCryptoPriceAsync(string cryptoName, string currency = "czk");
+        Task<decimal?> GetCurrentMetalPriceAsync(string metalName);
     }
 }

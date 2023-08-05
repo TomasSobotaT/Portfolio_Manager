@@ -11,13 +11,21 @@ namespace PortfolioManager.Managers
         public CurrentPriceManager(IApiPriceManager apiPriceManager) => this.apiPriceManager = apiPriceManager;
 
 
-        public async Task<decimal> GetCurrentPriceAsync(string cryptoName, string currency ="czk" ) 
+        public async Task<decimal> GetCurrentCryptoPriceAsync(string cryptoName, string currency ="czk" ) 
         {
-             return await apiPriceManager.GetActuallPriceAsync(cryptoName,currency);
+             return await apiPriceManager.GetActuallCryptoPriceAsync(cryptoName,currency);
         }
-        public async Task<decimal> GetCurrentPriceAsync()
+
+   
+
+        public async Task<decimal> GetCurrentCryptoPriceAsync()
         {
-             return await apiPriceManager.GetActuallPriceAsync();
+             return await apiPriceManager.GetActuallCryptoPriceAsync();
+        }
+
+        public async Task<decimal?> GetCurrentMetalPriceAsync(string metalName)
+        {
+            return await apiPriceManager.GetActuallMetalPriceAsync(metalName);
         }
 
     }

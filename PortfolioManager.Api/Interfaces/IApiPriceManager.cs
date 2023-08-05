@@ -8,6 +8,7 @@ namespace PortfolioManager.Api.Interfaces
 {
     public interface IApiPriceManager
     {
-        Task<decimal> GetActuallPriceAsync(string cryptoName = "bitcoin", string currency = "czk");
+        Task<decimal> GetActuallCryptoPriceAsync(string cryptoName = "bitcoin", string currency = "czk");
+        Task<decimal?> GetActuallMetalPriceAsync(string metalName);
     }
 }

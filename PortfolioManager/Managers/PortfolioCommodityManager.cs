@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using PortfolioManager.Api;
 using PortfolioManager.Data.Interfaces;
 using PortfolioManager.Data.Models;
 using PortfolioManager.Interfaces;
@@ -36,7 +37,16 @@ namespace PortfolioManager.Managers
 
             foreach (var item in list)
             {
-                decimal dPrice = await currentPriceManager.GetCurrentPriceAsync(item.CoingeckoId.Trim().ToLower());
+                decimal? dPrice;
+
+                if (item.Type.ToLower().Trim() == "krypto")
+                    dPrice = await currentPriceManager.GetCurrentCryptoPriceAsync(item.CoingeckoId.Trim().ToLower());
+                else
+                   if (item.Type.ToLower().Trim() == "komodita")
+                    dPrice = await currentPriceManager.GetCurrentMetalPriceAsync(item.CoingeckoId.Trim().ToLower());
+                else
+                    dPrice = 0;
+
                 double price = System.Convert.ToInt32(dPrice);
 
                 resultWithCurrentPrices.Add(item.Name, price * item.Amount);
@@ -52,6 +62,14 @@ namespace PortfolioManager.Managers
 
             var commodity = mapper.Map<Commodity>(commodityDto);
             commodityRepository.Update(commodity);
+        }
+
+
+        public void Add(CommodityDto commodityDto)
+        {
+            var commodity = mapper.Map<Commodity>(commodityDto);
+            commodityRepository.Add(commodity);
+
         }
 
 

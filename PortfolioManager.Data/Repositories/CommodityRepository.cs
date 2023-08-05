@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting.Internal;
 using Microsoft.Identity.Client;
 using PortfolioManager.Data.Interfaces;
 using PortfolioManager.Data.Models;
@@ -40,10 +41,15 @@ namespace PortfolioManager.Data.Repositories
             applicationDbContext.SaveChanges();
         }
 
+        public void Add(Commodity commodity)
+        {
+            commodities.Add(commodity);
+            applicationDbContext.SaveChanges();
+        }
+
+
         public Commodity? Find(int? id) => commodities.Find(id);    
-        
-
-
+   
         public bool CommodityExists(int id) => commodities.Any(c => c.Id == id);
 
         

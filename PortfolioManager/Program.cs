@@ -8,7 +8,7 @@ using PortfolioManager.Data.Interfaces;
 using PortfolioManager.Data.Repositories;
 using AutoMapper;
 using Microsoft.OpenApi.Models;
-using static System.Net.WebRequestMethods;
+//using static System.Net.WebRequestMethods;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Data.SqlClient;
@@ -49,7 +49,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Version = "v1",
         Title = "Portfolio manager API",
-        Description = "Webov� API pro projekt Portfolio Manager vytvo�en� pomoc� technologie ASP.NET CORE MVC.",
+        Description = "Webové API pro projekt Portfolio Manager vytvořené pomocí technologie ASP.NET CORE MVC.",
         Contact = new OpenApiContact
         {
             Name = "Kontakt",

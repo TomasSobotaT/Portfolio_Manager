@@ -46,13 +46,7 @@ namespace PortfolioManager.Controllers
 
         }
 
-        public IActionResult Edit()
-        {
-            return Edit();
-        }
 
-
-        [HttpGet]
         public IActionResult Edit(int? id)
         {
             if (id is null)
@@ -104,12 +98,30 @@ namespace PortfolioManager.Controllers
 
 
 
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+     
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create([Bind("Id,Name,Type,CoingeckoId,Amount,InvestedMoney")] CommodityDto commodity)
+        {
+            if (ModelState.IsValid)
+            {
+                portfolioCommodityManager.Add(commodity);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(commodity);
+        }
+
 
 
 
 
         #region HelpMethods
-       
+
         private bool CommodityExists(int id)
         {
             return portfolioCommodityManager.CommodityExists(id);
