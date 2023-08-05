@@ -47,7 +47,7 @@ namespace PortfolioManager.Data.Repositories
             return true;
         }
 
-        public virtual T Get(string name, DateTime date)
+        public virtual T? Get(string name, DateTime date)
         {
             T? entity = dbSet.Find(name,date);
             return entity;
@@ -69,7 +69,7 @@ namespace PortfolioManager.Data.Repositories
         }
 
       
-        public virtual T Update(T entity)
+        public virtual T? Update(T entity)
         {
             if (entity is null)
                 return null;

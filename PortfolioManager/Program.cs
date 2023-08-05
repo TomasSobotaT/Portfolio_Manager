@@ -21,25 +21,37 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+builder.Services.AddDefaultIdentity<IdentityUser>(
+
+    options =>
+    {
+        options.SignIn.RequireConfirmedAccount = false;
+        options.Password.RequiredLength = 8;
+        options.Password.RequireNonAlphanumeric = false;
+        options.User.RequireUniqueEmail = true;
+    })
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
 
 builder.Services.AddControllers();
 builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options => { options.SwaggerDoc("crypto", new OpenApiInfo
+builder.Services.AddSwaggerGen(options =>
 {
-    Version = "v1",
-    Title = "Portfolio manager API",
-    Description = "Webové API pro projekt Portfolio Manager vytvoøený pomocí technologie ASP.NET CORE MVC.",
-    Contact = new OpenApiContact
+    options.SwaggerDoc("crypto", new OpenApiInfo
     {
-        Name = "Kontakt",
-        Url = new Uri("https://www.tsobota.cz")
-    }
-});
+        Version = "v1",
+        Title = "Portfolio manager API",
+        Description = "Webové API pro projekt Portfolio Manager vytvoøený pomocí technologie ASP.NET CORE MVC.",
+        Contact = new OpenApiContact
+        {
+            Name = "Kontakt",
+            Url = new Uri("https://www.tsobota.cz")
+        }
+    });
 
 
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

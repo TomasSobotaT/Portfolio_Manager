@@ -26,8 +26,4 @@
     <ProjectReference Include="..\PortfolioManager.Data\PortfolioManager.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>
