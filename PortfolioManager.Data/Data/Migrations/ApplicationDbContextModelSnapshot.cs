@@ -235,28 +235,9 @@ namespace PortfolioManager.Data.Migrations
                     b.Property<double>("Amount")
                         .HasColumnType("float");
 
-                    b.Property<decimal>("InvestedMoney")
-                        .HasColumnType("decimal(18,5)");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("CoingeckoId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("CommoditiesDbSet");
-                });
-
-            modelBuilder.Entity("PortfolioManager.Data.Models.CommodityTest", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<double>("Amount")
-                        .HasColumnType("float");
 
                     b.Property<decimal>("InvestedMoney")
                         .HasColumnType("decimal(18,5)");
@@ -265,17 +246,23 @@ namespace PortfolioManager.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
-                    b.ToTable("CommoditiesTestDbSet");
+                    b.ToTable("Commodity");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
                             Amount = 0.0,
+                            CoingeckoId = "bitcoin",
                             InvestedMoney = 100000m,
-                            Name = "bitcon"
+                            Name = "Bitcon",
+                            Type = "crypto"
                         });
                 });
 

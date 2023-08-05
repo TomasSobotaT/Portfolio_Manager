@@ -17,6 +17,9 @@ namespace PortfolioManager.Data.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity),Key]
         public int Id { get; set; }   
         public string Name { get; set; } = "";
+        public string Type { get; set; } = "";
+
+        public string CoingeckoId { get; set; } = "";
 
         public double Amount { get; set; }
 

@@ -17,9 +17,8 @@ namespace PortfolioManager.Controllers
             this._priceManager = _priceManager;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            ViewBag.Cena = await _priceManager.GetActuallPriceAsync("bitcoin", "czk");
             return View();
         }
 

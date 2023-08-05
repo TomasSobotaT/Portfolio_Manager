@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace PortfolioManager.Api.Managers
 {
+    /// <summary>
+    /// Get current commodity prices from API
+    /// </summary>
     public class ApiPriceManager : IApiPriceManager
     {
 
@@ -42,15 +45,19 @@ namespace PortfolioManager.Api.Managers
                 string jsonString = await response.Content.ReadAsStringAsync();
                 var result = JsonConvert.DeserializeObject<Dictionary<string, Crypto>>(jsonString);
 
-                if (result is null)
-                    throw new ArgumentNullException(nameof(result), "Chyba při volání API Coingecko.");
+                if (result is null || result.Count == 0)
+                    return 0;
+
+
+                if (currency.Equals("usd",StringComparison.OrdinalIgnoreCase))
+                    return result.First().Value.usd;
 
                 return result.First().Value.czk;
 
             }
             else
             {
-                throw new Exception("Chyba při volání API Coingecko.");
+                return 0;
             }
 
         }

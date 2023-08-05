@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Identity;
+ï»¿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PortfolioManager.Api.Interfaces;
 using PortfolioManager.Api.Managers;
@@ -10,6 +10,10 @@ using AutoMapper;
 using Microsoft.OpenApi.Models;
 using static System.Net.WebRequestMethods;
 using System.Reflection;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Data.SqlClient;
+using PortfolioManager.Managers;
+using PortfolioManager.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,7 +49,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Version = "v1",
         Title = "Portfolio manager API",
-        Description = "Webové API pro projekt Portfolio Manager vytvoøený pomocí technologie ASP.NET CORE MVC.",
+        Description = "Webovï¿½ API pro projekt Portfolio Manager vytvoï¿½enï¿½ pomocï¿½ technologie ASP.NET CORE MVC.",
         Contact = new OpenApiContact
         {
             Name = "Kontakt",
@@ -64,9 +68,16 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddScoped<IApiPriceManager, ApiPriceManager>();
 builder.Services.AddScoped<IHistoricDataApiRepository, HistoricDataAPiRepository>();
 builder.Services.AddScoped<IHistoricDataManager, HistoricDataManager>();
+builder.Services.AddScoped<ICommodityRepository, CommodityRepository>();
+builder.Services.AddScoped<IPortfolioCommodityManager, PortfolioCommodityManager>();
+builder.Services.AddScoped<ICurrentPriceManager, CurrentPriceManager>();
 
 
-builder.Services.AddAutoMapper(typeof(AutomapperConfiguration));
+
+
+builder.Services.AddAutoMapper(typeof(AutomapperConfigurationApi));
+builder.Services.AddAutoMapper(typeof(AutomapperConfigurationMain));
+
 
 var app = builder.Build();
 

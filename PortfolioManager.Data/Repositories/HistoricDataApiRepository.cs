@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace PortfolioManager.Data.Repositories
 {
+    /// <summary>
+    /// provides data from database to API
+    /// </summary>
     public class HistoricDataAPiRepository : BaseApiRepository<HistoricData>, IHistoricDataApiRepository
     {
         public HistoricDataAPiRepository(ApplicationDbContext applicationDbContext) : base(applicationDbContext) { }

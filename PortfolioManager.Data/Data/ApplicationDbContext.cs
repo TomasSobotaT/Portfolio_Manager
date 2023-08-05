@@ -7,8 +7,7 @@ namespace PortfolioManager.Data
     public class ApplicationDbContext : IdentityDbContext
     {
 
-        public DbSet<Commodity>? CommoditiesDbSet { get; set; }
-        public DbSet<CommodityTest>? CommoditiesTestDbSet { get; set; }
+        public DbSet<Commodity>? Commodity { get; set; }
 
         public DbSet<HistoricData>? HistoricDataDbSet { get; set; }
 
@@ -27,12 +26,14 @@ namespace PortfolioManager.Data
 
         public void AddTestData(ModelBuilder builder) 
         {
-            builder.Entity<CommodityTest>().HasData(
-                    new CommodityTest
+            builder.Entity<Commodity>().HasData(
+                    new Commodity
                     {
                         Id = 1,
-                        Name = "bitcon",
-                        InvestedMoney = 100000
+                        Name = "Bitcoin",
+                        InvestedMoney = 100000,
+                        Type = "crypto",
+                        CoingeckoId = "bitcoin"
 
                     });
             
