@@ -38,16 +38,24 @@ namespace PortfolioManager.Managers
             foreach (var item in list)
             {
                 decimal? dPrice;
+                double? dollarPrice = 1;
 
                 if (item.Type.ToLower().Trim() == "krypto")
                     dPrice = await currentPriceManager.GetCurrentCryptoPriceAsync(item.ApiId.Trim().ToLower());
                 else
                    if (item.Type.ToLower().Trim() == "komodita")
+                {
                     dPrice = await currentPriceManager.GetCurrentMetalPriceAsync(item.ApiId.Trim().ToLower());
+                    dollarPrice = await currentPriceManager.GetCurrentCurrencyPriceAsync("usd");
+                }
+                    
                 else
                     dPrice = 0;
 
                 double price = System.Convert.ToInt32(dPrice);
+
+                if(dollarPrice is not null && dollarPrice > 1)
+                price = price * System.Convert.ToDouble(dollarPrice);
 
                 resultWithCurrentPrices.Add(item.Name, price * item.Amount);
             }

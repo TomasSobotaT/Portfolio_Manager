@@ -240,7 +240,7 @@ namespace PortfolioManager.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("InvestedMoney")
-                        .HasColumnType("decimal(18,5)");
+                        .HasColumnType("decimal(18,0)");
 
                     b.Property<string>("Name")
                         .IsRequired()

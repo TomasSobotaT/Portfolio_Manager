@@ -25,8 +25,24 @@
       "PackagePath": "staticwebassets\\img\\bitcoin.svg"
     },
     {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\ccommodities.png",
+      "PackagePath": "staticwebassets\\img\\ccommodities.png"
+    },
+    {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\chat.gif",
       "PackagePath": "staticwebassets\\img\\chat.gif"
+    },
+    {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\commodities2.png",
+      "PackagePath": "staticwebassets\\img\\commodities2.png"
+    },
+    {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\dollar-donation.gif",
+      "PackagePath": "staticwebassets\\img\\dollar-donation.gif"
+    },
+    {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\dollar-stack.gif",
+      "PackagePath": "staticwebassets\\img\\dollar-stack.gif"
     },
     {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\dollar.png",

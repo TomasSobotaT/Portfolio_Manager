@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.portfolio-zero {
+    width: 100%;
+    height: 85vh !important;
+}

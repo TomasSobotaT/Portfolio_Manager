@@ -21,9 +21,10 @@ namespace PortfolioManager.Data.Models
 
         public string ApiId { get; set; } = "";
 
-        public double Amount { get; set; }
 
-        [Column(TypeName = "decimal(18,5)")]
+		public double Amount { get; set; }
+
+        [Column(TypeName = "decimal(18,0)")]
         public decimal InvestedMoney { get; set; }  
 
 
