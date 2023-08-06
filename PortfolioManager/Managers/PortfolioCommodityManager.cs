@@ -37,8 +37,8 @@ namespace PortfolioManager.Managers
 
             foreach (var item in list)
             {
-                decimal? dPrice;
-                double? dollarPrice = 1;
+                decimal? dPrice;        //price from API
+                double? dollarPrice = 1; //if dPrice is in USD, get CZK price of dollar an  *
 
                 if (item.Type.ToLower().Trim() == "krypto")
                     dPrice = await currentPriceManager.GetCurrentCryptoPriceAsync(item.ApiId.Trim().ToLower());
@@ -52,7 +52,7 @@ namespace PortfolioManager.Managers
                 else
                     dPrice = 0;
 
-                double price = System.Convert.ToInt32(dPrice);
+                double price = System.Convert.ToDouble(dPrice);
 
                 if(dollarPrice is not null && dollarPrice > 1)
                 price = price * System.Convert.ToDouble(dollarPrice);

@@ -15,6 +15,7 @@ using Microsoft.Data.SqlClient;
 using PortfolioManager.Managers;
 using PortfolioManager.Interfaces;
 using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -82,6 +83,14 @@ builder.Services.AddAutoMapper(typeof(AutomapperConfigurationMain));
 
 var app = builder.Build();
 
+var supportedCultures = new[] { new CultureInfo("en-US") };
+app.UseRequestLocalization(new RequestLocalizationOptions
+{
+	DefaultRequestCulture = new RequestCulture("en-US"),
+	SupportedCultures = supportedCultures,
+	SupportedUICultures = supportedCultures
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -99,6 +108,8 @@ else
     app.UseHsts();
 }
 
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -112,5 +123,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+
+
 
 app.Run();

@@ -23,6 +23,8 @@ namespace PortfolioManager.Models
 
 		[DisplayName("Množství")]
 
+		
+		//public string AmountString { get; set; } = "";
 		public double Amount { get; set; }
 
 		[DisplayName("Celkem investováno (CZK)")]

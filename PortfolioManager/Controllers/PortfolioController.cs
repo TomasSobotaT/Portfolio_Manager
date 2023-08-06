@@ -108,6 +108,8 @@ namespace PortfolioManager.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create([Bind("Id,Name,Type,ApiId,Amount,InvestedMoney")] CommodityDto commodity)
         {
+           
+
             if (ModelState.IsValid)
             {
                 portfolioCommodityManager.Add(commodity);
