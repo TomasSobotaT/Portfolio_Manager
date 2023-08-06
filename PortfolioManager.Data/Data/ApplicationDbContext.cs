@@ -33,7 +33,7 @@ namespace PortfolioManager.Data
                         Name = "Bitcoin",
                         InvestedMoney = 100000,
                         Type = "crypto",
-                        CoingeckoId = "bitcoin"
+                        ApiId = "bitcoin"
 
                     });
             

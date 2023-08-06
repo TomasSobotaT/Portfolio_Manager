@@ -21,7 +21,7 @@ namespace PortfolioManager.Data.Repositories
             return result;
         }
 
-        public override HistoricData Get(string name, DateTime date)
+        public override HistoricData? Get(string name, DateTime date)
         {
 
             

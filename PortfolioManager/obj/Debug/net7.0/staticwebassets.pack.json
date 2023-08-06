@@ -21,16 +21,36 @@
       "PackagePath": "staticwebassets\\img\\api.gif"
     },
     {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\bitcoin.svg",
+      "PackagePath": "staticwebassets\\img\\bitcoin.svg"
+    },
+    {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\chat.gif",
       "PackagePath": "staticwebassets\\img\\chat.gif"
+    },
+    {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\dollar.png",
+      "PackagePath": "staticwebassets\\img\\dollar.png"
+    },
+    {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\gold.png",
+      "PackagePath": "staticwebassets\\img\\gold.png"
     },
     {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\investment.gif",
       "PackagePath": "staticwebassets\\img\\investment.gif"
     },
     {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\medley.png",
+      "PackagePath": "staticwebassets\\img\\medley.png"
+    },
+    {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\sign.gif",
       "PackagePath": "staticwebassets\\img\\sign.gif"
+    },
+    {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\js\\crypto.js",
+      "PackagePath": "staticwebassets\\js\\crypto.js"
     },
     {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\js\\site.js",

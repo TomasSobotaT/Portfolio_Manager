@@ -40,10 +40,10 @@ namespace PortfolioManager.Managers
                 decimal? dPrice;
 
                 if (item.Type.ToLower().Trim() == "krypto")
-                    dPrice = await currentPriceManager.GetCurrentCryptoPriceAsync(item.CoingeckoId.Trim().ToLower());
+                    dPrice = await currentPriceManager.GetCurrentCryptoPriceAsync(item.ApiId.Trim().ToLower());
                 else
                    if (item.Type.ToLower().Trim() == "komodita")
-                    dPrice = await currentPriceManager.GetCurrentMetalPriceAsync(item.CoingeckoId.Trim().ToLower());
+                    dPrice = await currentPriceManager.GetCurrentMetalPriceAsync(item.ApiId.Trim().ToLower());
                 else
                     dPrice = 0;
 

@@ -235,7 +235,7 @@ namespace PortfolioManager.Data.Migrations
                     b.Property<double>("Amount")
                         .HasColumnType("float");
 
-                    b.Property<string>("CoingeckoId")
+                    b.Property<string>("ApiId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -259,9 +259,9 @@ namespace PortfolioManager.Data.Migrations
                         {
                             Id = 1,
                             Amount = 0.0,
-                            CoingeckoId = "bitcoin",
+                            ApiId = "bitcoin",
                             InvestedMoney = 100000m,
-                            Name = "Bitcon",
+                            Name = "Bitcoin",
                             Type = "crypto"
                         });
                 });

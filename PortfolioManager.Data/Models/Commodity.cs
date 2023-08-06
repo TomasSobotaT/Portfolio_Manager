@@ -19,7 +19,7 @@ namespace PortfolioManager.Data.Models
         public string Name { get; set; } = "";
         public string Type { get; set; } = "";
 
-        public string CoingeckoId { get; set; } = "";
+        public string ApiId { get; set; } = "";
 
         public double Amount { get; set; }
 

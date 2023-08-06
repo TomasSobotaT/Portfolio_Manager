@@ -4,6 +4,7 @@
     {
         Task<decimal> GetCurrentCryptoPriceAsync();
         Task<decimal> GetCurrentCryptoPriceAsync(string cryptoName, string currency = "czk");
-        Task<decimal?> GetCurrentMetalPriceAsync(string metalName);
+		Task<float?> GetCurrentCurrencyPriceAsync(string metalName);
+		Task<decimal?> GetCurrentMetalPriceAsync(string metalName);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PortfolioManager.Api.Interfaces;
 using PortfolioManager.Api.Managers;
+using PortfolioManager.Interfaces;
 using System.Diagnostics;
 
 namespace PortfolioManager.Controllers
@@ -8,17 +9,19 @@ namespace PortfolioManager.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IApiPriceManager _priceManager;
+        private readonly ICurrentPriceManager priceManager;
 
 
-        public HomeController(ILogger<HomeController> logger, IApiPriceManager _priceManager)
+        public HomeController(ILogger<HomeController> logger, ICurrentPriceManager priceManager)
         {
             _logger = logger;
-            this._priceManager = _priceManager;
+            this.priceManager = priceManager;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            //ViewBag.PriceUSD = await priceManager.GetCurrentCurrencyPriceAsync("usd");
+                
             return View();
         }
 

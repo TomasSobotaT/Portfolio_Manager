@@ -28,5 +28,9 @@ namespace PortfolioManager.Managers
             return await apiPriceManager.GetActuallMetalPriceAsync(metalName);
         }
 
-    }
+		public async Task<float?> GetCurrentCurrencyPriceAsync(string metalName)
+		{
+			return await apiPriceManager.GetActuallCurrencyPriceAsync(metalName);
+		}
+	}
 }

@@ -66,7 +66,7 @@ namespace PortfolioManager.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("Id,Name,Type,CoingeckoId,Amount,InvestedMoney")] CommodityDto commodity)
+        public IActionResult Edit(int id, [Bind("Id,Name,Type,ApiId,Amount,InvestedMoney")] CommodityDto commodity)
         {
             if (id != commodity.Id)
             {
@@ -106,7 +106,7 @@ namespace PortfolioManager.Controllers
      
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Name,Type,CoingeckoId,Amount,InvestedMoney")] CommodityDto commodity)
+        public IActionResult Create([Bind("Id,Name,Type,ApiId,Amount,InvestedMoney")] CommodityDto commodity)
         {
             if (ModelState.IsValid)
             {
