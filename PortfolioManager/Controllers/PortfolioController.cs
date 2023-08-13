@@ -97,7 +97,6 @@ namespace PortfolioManager.Controllers
         }
 
 
-
         public IActionResult Create()
         {
             return View();
@@ -116,6 +115,39 @@ namespace PortfolioManager.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(commodity);
+        }
+
+
+        public  IActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var commodity = portfolioCommodityManager.Find(id);
+
+			if (commodity == null)
+            {
+                return NotFound();
+            }
+
+            return View(commodity);
+        }
+
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            if (!portfolioCommodityManager.CommodityExists(id))
+            {
+                return Problem("Nenalezeno");
+            }
+		
+               portfolioCommodityManager.Delete(id);
+       
+            return RedirectToAction(nameof(Index));
         }
 
 

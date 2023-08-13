@@ -18,7 +18,7 @@
 			<hr class="my-4 my-md-5 text-primary bg-primary" />
 
 
-			<table class="table table-striped">
+			<table class="table">
 				<thead>
 					<tr>
 						<th>
@@ -56,8 +56,8 @@
 								
 							</td>
 							<td>
-								<a asp-controller="Portfolio" asp-action="Edit" asp-route-id="@item.Id">Upravit</a> |
-								<a asp-action="Delete" asp-route-id="@item.Id">Smazat</a>
+								<a class="text-success" asp-controller="Portfolio" asp-action="Edit" asp-route-id="@item.Id">Upravit</a> |
+								<a class="text-danger" asp-action="Delete" asp-route-id="@item.Id">Smazat</a>
 							</td>
 						</tr>
 					}
@@ -76,7 +76,17 @@
 							@Model.Sum(x=>x.InvestedMoney)
 						</td>
 						<td class="fw-bolder">
-							50555555
+							@{
+								int total = 0;
+								foreach (var item in Model)
+								{
+									total +=  ViewBag.CurrentPrices[item.Name];
+								}
+								<span>@total</span>
+							}
+						</td>
+						<td>
+
 						</td>
 					</tr>
 				</tfoot>

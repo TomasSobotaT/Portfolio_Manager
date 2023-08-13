@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AdX0OcyOSosbRfh79KmizpygX8EfHr96KyIW3HZgKrU=",
+  "Hash": "YoI0zB2A/DlSTajTc/FaplR5ifRKrWbi71cj/EnlNc4=",
   "Source": "PortfolioManager",
   "BasePath": "_content/PortfolioManager",
   "Mode": "Default",
@@ -119,6 +119,23 @@
       "OriginalItemSpec": "wwwroot\\img\\api.gif"
     },
     {
+      "Identity": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\bin.gif",
+      "SourceId": "PortfolioManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\",
+      "BasePath": "_content/PortfolioManager",
+      "RelativePath": "img/bin.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bin.gif"
+    },
+    {
       "Identity": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\bitcoin.svg",
       "SourceId": "PortfolioManager",
       "SourceType": "Discovered",
@@ -136,12 +153,12 @@
       "OriginalItemSpec": "wwwroot\\img\\bitcoin.svg"
     },
     {
-      "Identity": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\ccommodities.png",
+      "Identity": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\commodities.png",
       "SourceId": "PortfolioManager",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\",
       "BasePath": "_content/PortfolioManager",
-      "RelativePath": "img/ccommodities.png",
+      "RelativePath": "img/commodities.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,7 +167,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ccommodities.png"
+      "OriginalItemSpec": "wwwroot\\img\\commodities.png"
     },
     {
       "Identity": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\commodities2.png",

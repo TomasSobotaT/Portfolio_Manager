@@ -41,7 +41,15 @@ namespace PortfolioManager.Data.Repositories
             applicationDbContext.SaveChanges();
         }
 
-        public void Add(Commodity commodity)
+		public void Delete(int id)
+		{
+            var commodity = this.Find(id);
+            if(commodity != null)
+			commodities.Remove(commodity);
+			applicationDbContext.SaveChanges();
+		}
+
+		public void Add(Commodity commodity)
         {
             commodities.Add(commodity);
             applicationDbContext.SaveChanges();

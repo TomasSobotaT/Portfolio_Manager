@@ -14,5 +14,6 @@ namespace PortfolioManager.Data.Interfaces
         bool CommodityExists(int id);
         Commodity? Find(int? id);
         void Add(Commodity commodity);
-    }
+		void Delete(int id);
+	}
 }

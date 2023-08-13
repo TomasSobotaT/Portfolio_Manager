@@ -21,16 +21,20 @@
       "PackagePath": "staticwebassets\\img\\api.gif"
     },
     {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\bin.gif",
+      "PackagePath": "staticwebassets\\img\\bin.gif"
+    },
+    {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\bitcoin.svg",
       "PackagePath": "staticwebassets\\img\\bitcoin.svg"
     },
     {
-      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\ccommodities.png",
-      "PackagePath": "staticwebassets\\img\\ccommodities.png"
-    },
-    {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\chat.gif",
       "PackagePath": "staticwebassets\\img\\chat.gif"
+    },
+    {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\commodities.png",
+      "PackagePath": "staticwebassets\\img\\commodities.png"
     },
     {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\commodities2.png",

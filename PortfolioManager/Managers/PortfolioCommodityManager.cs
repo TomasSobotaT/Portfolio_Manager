@@ -71,9 +71,12 @@ namespace PortfolioManager.Managers
             var commodity = mapper.Map<Commodity>(commodityDto);
             commodityRepository.Update(commodity);
         }
+		public void Delete(int id)
+		{
+			commodityRepository.Delete(id);
+		}
 
-
-        public void Add(CommodityDto commodityDto)
+		public void Add(CommodityDto commodityDto)
         {
             var commodity = mapper.Map<Commodity>(commodityDto);
             commodityRepository.Add(commodity);

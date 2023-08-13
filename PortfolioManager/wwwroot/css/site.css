@@ -21,3 +21,11 @@ body {
     width: 100%;
     height: 85vh !important;
 }
+
+.form_color {
+    background-color:whitesmoke;
+}
+
+.btn-delete {
+    width:100px;
+}

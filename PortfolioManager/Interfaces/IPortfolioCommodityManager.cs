@@ -1,4 +1,5 @@
-﻿using PortfolioManager.Models;
+﻿using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
+using PortfolioManager.Models;
 
 namespace PortfolioManager.Interfaces
 {
@@ -10,5 +11,6 @@ namespace PortfolioManager.Interfaces
         void Add(CommodityDto commodityDto);
         bool CommodityExists(int id);
         CommodityDto Find(int? id);
-    }
+		void Delete(int id);
+	}
 }
