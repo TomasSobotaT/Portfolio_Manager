@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PQNkS3jFbUM7iBI9GW4GY0X0OmVA6YNYAdVvzOV9yuz6i+nJmrYLn8ydGxd/0+SUb4jNxtFEH6xGTDLS4dPstQ==",
+  "dgSpecHash": "RpK7G7BPMgmBVtBvJIn5Q6bfDWA7QtJPm+pZL4Dyc/EP6KpqZkXSuSOsHir3oTBnLjV5+uVwhVI/Drt6nxaTOg==",
   "success": true,
   "projectFilePath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\PortfolioManager.csproj",
   "expectedPackageFiles": [
@@ -141,6 +141,7 @@
     "C:\\Users\\tsobo\\.nuget\\packages\\nuget.projectmodel\\6.3.1\\nuget.projectmodel.6.3.1.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\nuget.protocol\\6.3.1\\nuget.protocol.6.3.1.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\nuget.versioning\\6.3.1\\nuget.versioning.6.3.1.nupkg.sha512",
+    "C:\\Users\\tsobo\\.nuget\\packages\\openai\\1.7.2\\openai.1.7.2.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\tsobo\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

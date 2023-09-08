@@ -27,16 +27,18 @@
 
 				<div class="mb-3">
 					<label asp-for="Password" class="fw-bold"></label>
-					<input asp-for="Password" class="form-control" />
+					<input asp-for="Password" class="form-control randomPassword"/>
 					<span asp-validation-for="Password"></span>
 				</div>
 
 				<div class="mb-3">
 					<label asp-for="ConfirmPassword" class="fw-bold"></label>
-					<input asp-for="ConfirmPassword" class="form-control" />
+					<input asp-for="ConfirmPassword" class="form-control randomPassword" id="randomPassword" />
 					<span asp-validation-for="ConfirmPassword"></span>
 				</div>
-
+				<div>
+					<input type="button" id="getRandomPassword" value="Náhodné heslo" />
+				</div>
 				<div class="mb-3 d-flex justify-content-center">
 					<button class="btn btn-primary" type="submit">Registrace</button>
 				</div>
@@ -54,3 +56,12 @@
 	</div>
 
 </div>
+
+
+				
+@section Scripts {
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script src="~/js/random.js"></script>
+
+	
+	}

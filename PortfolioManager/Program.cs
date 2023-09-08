@@ -16,6 +16,8 @@ using PortfolioManager.Managers;
 using PortfolioManager.Interfaces;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using PortfolioManager.Chat.Interfaces;
+using PortfolioManager.Chat.Managers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -73,8 +75,7 @@ builder.Services.AddScoped<IHistoricDataManager, HistoricDataManager>();
 builder.Services.AddScoped<ICommodityRepository, CommodityRepository>();
 builder.Services.AddScoped<IPortfolioCommodityManager, PortfolioCommodityManager>();
 builder.Services.AddScoped<ICurrentPriceManager, CurrentPriceManager>();
-
-
+builder.Services.AddScoped<IOpenAIChatManager, OpenAIChatManager>();
 
 
 builder.Services.AddAutoMapper(typeof(AutomapperConfigurationApi));

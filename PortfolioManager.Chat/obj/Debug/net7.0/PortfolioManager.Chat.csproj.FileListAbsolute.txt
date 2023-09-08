@@ -1,0 +1,12 @@
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\bin\Debug\net7.0\PortfolioManager.Chat.deps.json
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\bin\Debug\net7.0\PortfolioManager.Chat.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\bin\Debug\net7.0\PortfolioManager.Chat.pdb
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\obj\Debug\net7.0\PortfolioManager.Chat.csproj.AssemblyReference.cache
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\obj\Debug\net7.0\PortfolioManager.Chat.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\obj\Debug\net7.0\PortfolioManager.Chat.AssemblyInfoInputs.cache
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\obj\Debug\net7.0\PortfolioManager.Chat.AssemblyInfo.cs
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\obj\Debug\net7.0\PortfolioManager.Chat.csproj.CoreCompileInputs.cache
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\obj\Debug\net7.0\PortfolioManager.Chat.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\obj\Debug\net7.0\refint\PortfolioManager.Chat.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\obj\Debug\net7.0\PortfolioManager.Chat.pdb
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager.Chat\obj\Debug\net7.0\ref\PortfolioManager.Chat.dll

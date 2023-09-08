@@ -357,3 +357,6 @@ C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\b
 C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\OpenAI_API.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\PortfolioManager.Chat.dll
+C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\bin\Debug\net7.0\PortfolioManager.Chat.pdb

@@ -13,7 +13,7 @@
         "method" : "GET",
         "headers" :{}
 }
-console.log("dfsdf");
+
     
     $.ajax(livepriceBTC).done(function (response) {   
         console.log(response);

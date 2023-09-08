@@ -2405,6 +2405,24 @@
           }
         }
       },
+      "OpenAI/1.7.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "Microsoft.Extensions.Http": "2.1.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/OpenAI_API.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenAI_API.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -4219,6 +4237,19 @@
         },
         "runtime": {
           "bin/placeholder/PortfolioManager.Api.dll": {}
+        }
+      },
+      "PortfolioManager.Chat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "OpenAI": "1.7.2"
+        },
+        "compile": {
+          "bin/placeholder/PortfolioManager.Chat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PortfolioManager.Chat.dll": {}
         }
       },
       "PortfolioManager.Data/1.0.0": {
@@ -8048,6 +8079,21 @@
         "lib/netstandard2.0/NuGet.Versioning.xml",
         "nuget.versioning.6.3.1.nupkg.sha512",
         "nuget.versioning.nuspec"
+      ]
+    },
+    "OpenAI/1.7.2": {
+      "sha512": "veUa6xE+8ThjNLBCM75ZOOE0y72UNB/OQMsodOy+hTajZKV8So7s0dwx8x0kMqjgaiLMxC2grKGdQ+CVBl98sA==",
+      "type": "package",
+      "path": "openai/1.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/OpenAI_API.dll",
+        "lib/netstandard2.0/OpenAI_API.xml",
+        "nuget_logo.png",
+        "openai.1.7.2.nupkg.sha512",
+        "openai.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -12339,6 +12385,11 @@
       "path": "../PortfolioManager.Api/PortfolioManager.Api.csproj",
       "msbuildProject": "../PortfolioManager.Api/PortfolioManager.Api.csproj"
     },
+    "PortfolioManager.Chat/1.0.0": {
+      "type": "project",
+      "path": "../PortfolioManager.Chat/PortfolioManager.Chat.csproj",
+      "msbuildProject": "../PortfolioManager.Chat/PortfolioManager.Chat.csproj"
+    },
     "PortfolioManager.Data/1.0.0": {
       "type": "project",
       "path": "../PortfolioManager.Data/PortfolioManager.Data.csproj",
@@ -12356,6 +12407,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.8",
       "PortfolioManager.Api >= 1.0.0",
+      "PortfolioManager.Chat >= 1.0.0",
       "PortfolioManager.Data >= 1.0.0"
     ]
   },
@@ -12389,6 +12441,9 @@
           "projectReferences": {
             "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Api\\PortfolioManager.Api.csproj": {
               "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Api\\PortfolioManager.Api.csproj"
+            },
+            "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Chat\\PortfolioManager.Chat.csproj": {
+              "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Chat\\PortfolioManager.Chat.csproj"
             },
             "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj": {
               "projectPath": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager.Data\\PortfolioManager.Data.csproj"

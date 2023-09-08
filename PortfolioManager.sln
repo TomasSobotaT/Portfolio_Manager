@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortfolioManager.Api", "Por
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortfolioManager.Data", "PortfolioManager.Data\PortfolioManager.Data.csproj", "{52632B69-B126-459B-A5F7-A2B374A85EC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioManager.Chat", "PortfolioManager.Chat\PortfolioManager.Chat.csproj", "{C2935169-B49E-402B-A5C4-559C309E61FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{52632B69-B126-459B-A5F7-A2B374A85EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52632B69-B126-459B-A5F7-A2B374A85EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52632B69-B126-459B-A5F7-A2B374A85EC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2935169-B49E-402B-A5C4-559C309E61FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2935169-B49E-402B-A5C4-559C309E61FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2935169-B49E-402B-A5C4-559C309E61FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2935169-B49E-402B-A5C4-559C309E61FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

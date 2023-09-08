@@ -69,8 +69,16 @@
       "PackagePath": "staticwebassets\\img\\sign.gif"
     },
     {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\js\\chat.js",
+      "PackagePath": "staticwebassets\\js\\chat.js"
+    },
+    {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\js\\crypto.js",
       "PackagePath": "staticwebassets\\js\\crypto.js"
+    },
+    {
+      "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\js\\random.js",
+      "PackagePath": "staticwebassets\\js\\random.js"
     },
     {
       "Id": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\js\\site.js",

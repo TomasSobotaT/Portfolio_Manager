@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PortfolioManager.Api\PortfolioManager.Api.csproj" />
+    <ProjectReference Include="..\PortfolioManager.Chat\PortfolioManager.Chat.csproj" />
     <ProjectReference Include="..\PortfolioManager.Data\PortfolioManager.Data.csproj" />
   </ItemGroup>
 
