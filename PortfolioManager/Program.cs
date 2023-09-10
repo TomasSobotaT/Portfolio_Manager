@@ -69,13 +69,13 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 
+builder.Services.AddTransient<IOpenAIChatManager, OpenAIChatManager>();
 builder.Services.AddScoped<IApiPriceManager, ApiPriceManager>();
 builder.Services.AddScoped<IHistoricDataApiRepository, HistoricDataAPiRepository>();
 builder.Services.AddScoped<IHistoricDataManager, HistoricDataManager>();
 builder.Services.AddScoped<ICommodityRepository, CommodityRepository>();
 builder.Services.AddScoped<IPortfolioCommodityManager, PortfolioCommodityManager>();
 builder.Services.AddScoped<ICurrentPriceManager, CurrentPriceManager>();
-builder.Services.AddScoped<IOpenAIChatManager, OpenAIChatManager>();
 
 
 builder.Services.AddAutoMapper(typeof(AutomapperConfigurationApi));

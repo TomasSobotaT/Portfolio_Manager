@@ -10,9 +10,12 @@ using System.Threading.Tasks;
 
 namespace PortfolioManager.Chat.Managers
 {
+	/// <summary>
+	/// Communication with OPENAI API
+	/// </summary>
 	public class OpenAIChatManager :IOpenAIChatManager
 	{
-		private const string ApiKey = "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";
+		private const string ApiKey = "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";
 		private const string OrgId = "org-MuAnU5yTZJCiNb31UImRIpMJ";
 		private string options = "Odpovídej ve vážném stylu finančnicví, investování a bankovnictví.Odpověd maximálně 250 znaků.Vždy vykej a odpovídej v českém jazyce.";
 		private List<ChatMessage> messages = new();
@@ -42,11 +45,15 @@ namespace PortfolioManager.Chat.Managers
 		messages.Add(response.Choices.FirstOrDefault().Message);
 
 
-	if (messages.Count > 7)
+			if (messages.Count > 7)
+			{ 
 		messages.RemoveAt(1);
-		
+                messages.RemoveAt(2);
 
-	return answer;
+            }
+
+
+            return answer;
 
 }
 

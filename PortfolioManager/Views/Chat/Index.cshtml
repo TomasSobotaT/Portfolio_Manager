@@ -1,61 +1,49 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Portfolio Manager Chat";
+}
 
-
-        
-        <style>
-           #question{
-            position:fixed;
-            bottom: 0px;
-            width: 100%;
-         
-           }
-           .even-color {
-            background-color: rgb(234, 234, 245); 
-           }
-           .margin-start{
-                margin-left:25%;
-            }
-
-    .margin-end {
-        margin-right: 25%;
-    }
-
-    .message{
-        border: 3px solid rgba(20, 10, 20, 0.3);
-
-        border-radius: 20px;
-    }
-
-        </style>
+<link rel="stylesheet" href="/css/chat.css" />
 
 
 
-@*        <div class="container">
-*@
-            <div id="conversation"></div>
-            
-      @*  </div>*@
-        <div class="d-flex justify-content-center">
+<div id="conversation">
 
-        <div id="question" class=" w-75 bg-dark p-5">
-            <div id="" class="d-flex flex-column justify-content-center align-items-center mr-5">
-                <textarea id="text-input"  class="form-control w-75 border border-5" placeholder="Napiš otázku..."></textarea>
-                
-                <div class="mb-3">
-                    <input type="button" value="Odeslat" class="btn btn-info mt-2">
-                </div>
+    <div id="chat-image-div" class="d-flex justify-content-center flex-column align-items-center">
+     <div class="description mb-3">
+        <p class="fw-bold mt-3 text-center mx-3 text-primary display-6 mb-4">Investujte s umělou inteligencí: Váš osobní chatovací poradce.</p>
+   </div>
+  <img src="/img/chat.png" class="img-fluid chat-image" style="max-width:250px" />
+    </div>
+
+</div>
+
+<div id="white-space"></div>
+
+
+
+<div class="d-flex justify-content-center bg-light">
+
+    <div id="question" class="bg-white p-4 rounded">
+        <div id="" class="d-flex flex-column justify-content-center align-items-center">
+            <textarea id="text-input" rows="3" class="form-control  border border-5 p-2"
+                      placeholder="Napiš otázku..."></textarea>
+
+            <div class="">
+                <input type="button" value="Odeslat" class="btn btn-info mt-3">
             </div>
         </div>
-        </div>
+    </div>
+</div>
 
 
 
-            
 
-        <script type=""  src="/js/chat.js" ></script>
+@section Scripts {
+<script type="" src="/js/chat.js"></script>
+}
 
-    
-    
+
+
 
 
 
