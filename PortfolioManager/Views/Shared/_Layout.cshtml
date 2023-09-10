@@ -5,33 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - PortfolioManager</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PortfolioManager.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 w-100">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PortfolioManager
-@*                    <img src="/img/logo.png" class="img-fluid" style="max-height:50px" /> 
-*@                </a>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-white border-bottom box-shadow mb-3 w-100 bg-dark">
+            <div class="container-fluid bg-dark text-light d-flex justify-content-end p-3 p-md-0">
+                <div>
+
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                   <img src="/img/logo.png" class="img-fluid img-logo" style="max-height:75px" /> 
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                </div>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1 text-center">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Úvod</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Úvod</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Portfolio" asp-action="Index">Portfolio</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Portfolio" asp-action="Index">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="/swagger" >API</a>
+                            <a class="nav-link text-light" href="/swagger">API</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="/Chat">Chat</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -48,13 +54,13 @@
     <footer class="border-top footer text-muted">
         <div class="container text-center">
         
-                <a class="text-dark text-decoration-none" target="_blank" href="http://www.tsobota.cz">
-                    &copy;Design and
-                    code by Tomas Sobota
-                </a>
+                <a class="text-dark text-decoration-none"  target="_blank" href="http://www.tsobota.cz">
+                <span class="text-muted">&copy;Design and code by Tomas Sobota</span>
+            </a>
          
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

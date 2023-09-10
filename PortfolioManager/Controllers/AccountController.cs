@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using PortfolioManager.Data.Models;
 using PortfolioManager.Data.Models.AccountViewModels;
 
 namespace PortfolioManager.Controllers
@@ -11,12 +12,12 @@ namespace PortfolioManager.Controllers
     public class AccountController : Controller
     {
 
-        private readonly SignInManager<IdentityUser> signInManager;
-        private readonly UserManager<IdentityUser> userManager;
+        private readonly SignInManager<ApplicationUser> signInManager;
+        private readonly UserManager<ApplicationUser> userManager;
 		private readonly ILogger<HomeController> _logger;
 
 
-		public AccountController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager, ILogger<HomeController> logger)
+		public AccountController(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager, ILogger<HomeController> logger)
 		{
 			this.signInManager = signInManager;
 			this.userManager = userManager;
@@ -92,7 +93,7 @@ namespace PortfolioManager.Controllers
                 return View(registerViewModel);
 
 			
-				var user = new IdentityUser { UserName = registerViewModel.Email, Email = registerViewModel.Email };
+				var user = new ApplicationUser { UserName = registerViewModel.Email, Email = registerViewModel.Email };
 				var result = await userManager.CreateAsync(user, registerViewModel.Password);
 
 				if (result.Succeeded)
@@ -109,6 +110,16 @@ namespace PortfolioManager.Controllers
 
 			return View(registerViewModel);
 		}
+
+        [HttpPost]
+        [ValidateAntiForgeryToken] 
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync(); 
+
+         
+            return RedirectToAction("Index", "Home");
+        }
 
 
         /// <summary>

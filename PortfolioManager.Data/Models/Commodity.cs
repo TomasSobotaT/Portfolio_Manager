@@ -25,8 +25,11 @@ namespace PortfolioManager.Data.Models
 		public double Amount { get; set; }
 
         [Column(TypeName = "decimal(18,0)")]
-        public decimal InvestedMoney { get; set; }  
+        public decimal InvestedMoney { get; set; }
+        public virtual ApplicationUser? ApplicationUser { get; set; }
 
+        //[ForeignKey(nameof(ApplicationUser))]
+        //public string UserId { get; set; }
 
     }
 }

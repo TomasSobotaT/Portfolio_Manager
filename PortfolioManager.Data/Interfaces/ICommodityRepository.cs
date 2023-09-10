@@ -9,7 +9,7 @@ namespace PortfolioManager.Data.Interfaces
 {
     public interface ICommodityRepository
     {
-        IEnumerable<Commodity> GetCommodities();
+        IEnumerable<Commodity> GetCommodities(string UserId);
         void Update(Commodity commodity);
         bool CommodityExists(int id);
         Commodity? Find(int? id);

@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using PortfolioManager.Data.Models;
 
 namespace PortfolioManager.Models
 {
@@ -30,5 +31,10 @@ namespace PortfolioManager.Models
 		[DisplayName("Celkem investováno (CZK)")]
 
 		public decimal InvestedMoney { get; set; }
+
+        public virtual ApplicationUser? ApplicationUser { get; set; }
+
+        //[ForeignKey(nameof(ApplicationUser))]
+        //public string UserId { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting.Internal;
 using Microsoft.Identity.Client;
 using PortfolioManager.Data.Interfaces;
@@ -18,19 +19,18 @@ namespace PortfolioManager.Data.Repositories
     {
         private readonly ApplicationDbContext applicationDbContext;
         private readonly DbSet<Commodity> commodities;
+    
 
         public CommodityRepository(ApplicationDbContext applicationDbContext) 
         {
             this.applicationDbContext = applicationDbContext;
             this.commodities = applicationDbContext.Set<Commodity>();
-        
-        }
+         }
 
 
-        public  IEnumerable<Commodity> GetCommodities()
+        public IEnumerable<Commodity> GetCommodities(string UserId)
         {
-
-          var result =  commodities.ToList();
+            var result = commodities.Where(a=>a.ApplicationUser.Id == UserId).ToList();
 
             return result;
         }

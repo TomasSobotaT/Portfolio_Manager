@@ -33,5 +33,14 @@ max-width: 100%;
     max-width: 75px;
 }
 
+
+
+
 @media only screen and (max-width: 768px) {
+
+  /*  .img-logo {
+        border:2px solid red;
+        max-height:40px;
+        max-width:70%;
+    }*/
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,18 +21,27 @@ namespace PortfolioManager.Controllers
     public class PortfolioController : Controller
     {
         private readonly IPortfolioCommodityManager portfolioCommodityManager;
+        private readonly UserManager<ApplicationUser> userManager;
 
 
 
-        public PortfolioController(IPortfolioCommodityManager portfolioCommodityManager)
+        public PortfolioController(IPortfolioCommodityManager portfolioCommodityManager, UserManager<ApplicationUser> userManager)
         {
             this.portfolioCommodityManager = portfolioCommodityManager;
-
+            this.userManager = userManager;
         }
 
         public async Task<IActionResult> Index()
         {
-            var result = portfolioCommodityManager.GetCommodities();
+            var currentUser = await userManager.GetUserAsync(User);
+
+            if (currentUser == null)
+            {
+                return View();
+            }
+
+            string userId = currentUser.Id;
+            var result = portfolioCommodityManager.GetCommodities(userId);
 
             if (result is null)
                 return Problem("Commodity is null.");
@@ -105,15 +115,22 @@ namespace PortfolioManager.Controllers
      
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Name,Type,ApiId,Amount,InvestedMoney")] CommodityDto commodity)
+        public async Task<IActionResult> Create(CommodityDto commodity)
         {
-           
+            var currentUser = await userManager.GetUserAsync(User);
+
+            commodity.ApplicationUser = currentUser; 
 
             if (ModelState.IsValid)
             {
                 portfolioCommodityManager.Add(commodity);
                 return RedirectToAction(nameof(Index));
             }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+
             return View(commodity);
         }
 

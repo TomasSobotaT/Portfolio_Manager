@@ -7,9 +7,8 @@
 <div class="container">
 	<div class="row">
 
-		@if (Model.Count() > 0)
+		@if (Model?.Count() > 0)
 		{
-
 
 			<div class="text-center mt-5">
 				<h1 class="text-primary">Vaše portfolio</h1>
@@ -102,7 +101,15 @@
 			<div class="text-center portfolio-zero d-flex flex-column justify-content-center align-items-center">
 				<h1 class="text-primary">Nemáte ještě vytvořené žádné portfolio</h1>
 				<h5 class="mt-4 mb-5">Neváhejte a vytvořte si ho hned teď</h5>
-				<a asp-action="Create" class="btn btn-primary text-decoration-none mb-5">Vytvořit vlastní portfolio</a>
+				@if (User.Identity.IsAuthenticated)
+				{
+					<a asp-action="Create" class="btn btn-primary text-decoration-none mb-5">Vytvořit vlastní portfolio</a>
+				}
+				else
+				{
+					<a asp-controller="Account" asp-action="Register" class="btn btn-primary text-decoration-none mb-5">Registrace</a>	
+				}
+
 				<img class="img-fluid" src="~/img/commodities2.png" />
 			</div>
 		}

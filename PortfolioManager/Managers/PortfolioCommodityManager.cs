@@ -22,9 +22,11 @@ namespace PortfolioManager.Managers
         }
 
 
-        public IEnumerable<CommodityDto> GetCommodities()
+        public  IEnumerable<CommodityDto> GetCommodities(string userId)
         {
-            var result = commodityRepository.GetCommodities();
+        
+     
+            var result = commodityRepository.GetCommodities(userId);
 
             return mapper.Map<List<CommodityDto>>(result);
 

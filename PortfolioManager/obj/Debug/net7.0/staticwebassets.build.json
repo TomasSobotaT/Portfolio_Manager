@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wFQdfrbZ48jZJJ4QN3S5QxswFwtZwBIyrbwFIDdV7YE=",
+  "Hash": "VGZWcZWmmFGFlbuSk15Ph91Eu6xkYBxDHfZSWwXxlzU=",
   "Source": "PortfolioManager",
   "BasePath": "_content/PortfolioManager",
   "Mode": "Default",
@@ -255,6 +255,23 @@
       "OriginalItemSpec": "wwwroot\\img\\dollar-stack.gif"
     },
     {
+      "Identity": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\favicon.ico",
+      "SourceId": "PortfolioManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\",
+      "BasePath": "_content/PortfolioManager",
+      "RelativePath": "img/favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\favicon.ico"
+    },
+    {
       "Identity": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\gold.png",
       "SourceId": "PortfolioManager",
       "SourceType": "Discovered",
@@ -304,6 +321,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\chat.png"
+    },
+    {
+      "Identity": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\icon.png",
+      "SourceId": "PortfolioManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\",
+      "BasePath": "_content/PortfolioManager",
+      "RelativePath": "img/icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icon.png"
     },
     {
       "Identity": "C:\\GitHubZaloha\\Portfolio_Manager-main\\Portfolio_Manager-main\\PortfolioManager\\wwwroot\\img\\investment.gif",

@@ -29,3 +29,25 @@ body {
 .btn-delete {
     width:100px;
 }
+.nav-link {
+    color: gold !important;
+}
+
+    .nav-link:hover {
+        transform: scale(111%);
+    }
+
+@media only screen and (max-width: 768px) {
+
+    .img-logo {
+        max-height: 75px;
+        max-width: 75%;
+    
+    }
+
+
+
+.navbar-toggler {
+
+}
+}
