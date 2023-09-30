@@ -131,7 +131,6 @@ namespace PortfolioManager.Controllers
                 return BadRequest(ModelState);
             }
 
-            return View(commodity);
         }
 
 

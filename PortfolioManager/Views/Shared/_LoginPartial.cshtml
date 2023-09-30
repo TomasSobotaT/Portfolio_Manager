@@ -9,7 +9,7 @@
         <a  class="nav-link text-light" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity?.Name</a>
     </li>
     <li class="nav-item">
-            <form class="form-inline" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <form class="form-inlinend-0 me-md-3" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
             <button  type="submit" class="nav-link btn btn-link text-light">Odhlásit</button>
         </form>
     </li>
@@ -20,7 +20,7 @@ else
             <a class="nav-link text-light" asp-controller="Account" asp-action="Register">Registrace</a>
     </li>
     <li class="nav-item">
-           <a class="nav-link text-light" asp-controller="Account" asp-action="Login">Přihlášení</a>
+           <a class="nav-link text-light me-md-3" asp-controller="Account" asp-action="Login">Přihlášení</a>
     </li>
 }
 </ul>

@@ -2,11 +2,6 @@
 using OpenAI_API.Chat;
 using OpenAI_API.Models;
 using PortfolioManager.Chat.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PortfolioManager.Chat.Managers
 {
@@ -15,13 +10,14 @@ namespace PortfolioManager.Chat.Managers
 	/// </summary>
 	public class OpenAIChatManager :IOpenAIChatManager
 	{
-		private const string ApiKey = "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";
-		private const string OrgId = "org-MuAnU5yTZJCiNb31UImRIpMJ";
-		private string options = "Odpovídej ve vážném stylu finančnicví, investování a bankovnictví.Odpověd maximálně 250 znaků.Vždy vykej a odpovídej v českém jazyce.";
+		private const string ApiKey = ApiOptions.ChatGptApiKey;
+		private const string OrgId = ApiOptions.ChatGptOrgId;
+		private string answerOptions = ApiOptions.answerOptions;
+
 		private List<ChatMessage> messages = new();
 
 
-		public OpenAIChatManager() => this.messages.Add(new ChatMessage(ChatMessageRole.System, options));
+		public OpenAIChatManager() => this.messages.Add(new ChatMessage(ChatMessageRole.System, answerOptions));
 
 		public async Task<string> GenerateAnswerAsync(string question)
 		{ 

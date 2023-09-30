@@ -20,9 +20,13 @@ namespace PortfolioManager.Controllers
 
         public async Task<IActionResult> Index()
         {
-            //ViewBag.PriceUSD = await priceManager.GetCurrentCurrencyPriceAsync("usd");
-                
-            return View();
+       
+            var priceDollarCzk = await priceManager.GetCurrentCurrencyPriceAsync("usd");
+            var priceGoldUsd = await priceManager.GetCurrentMetalPriceAsync("gold");
+			ViewBag.PriceUSD = priceDollarCzk.Value.ToString("F2");
+            ViewBag.PriceGold = priceGoldUsd.Value.ToString("F0");
+
+			return View();
         }
 
      

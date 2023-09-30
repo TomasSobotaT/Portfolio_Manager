@@ -103,11 +103,14 @@
 				<h5 class="mt-4 mb-5">Neváhejte a vytvořte si ho hned teď</h5>
 				@if (User.Identity.IsAuthenticated)
 				{
-					<a asp-action="Create" class="btn btn-primary text-decoration-none mb-5">Vytvořit vlastní portfolio</a>
+					<a asp-action="Create" class="btn btn-primary text-decoration-none mb-5">Vytvořit portfolio</a>
 				}
 				else
 				{
-					<a asp-controller="Account" asp-action="Register" class="btn btn-primary text-decoration-none mb-5">Registrace</a>	
+					<div class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center mb-4">
+					<a asp-controller="Account" asp-action="Login" class="btn btn-primary text-decoration-none">Přihlášení</a>
+						<a asp-controller="Account" asp-action="Register" class="btn btn-primary text-decoration-none">Registrace</a>
+					</div>
 				}
 
 				<img class="img-fluid" src="~/img/commodities2.png" />

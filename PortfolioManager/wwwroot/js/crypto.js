@@ -1,7 +1,5 @@
 ﻿
    let btc = document.getElementById("bitcoin");
-   //let pol = document.getElementById("polygon");
-   //let cos = document.getElementById("cosmos");
    let lit = document.getElementById("lithium");
 
 
@@ -18,8 +16,6 @@
     $.ajax(livepriceBTC).done(function (response) {   
         console.log(response);
         btc.textContent = response.bitcoin.usd +" USD";
-        //cos.textContent = response.cosmos.usd +" USD";  
-        //pol.textContent = response['matic-network'].usd +" USD"; 
         lit.textContent = response['lithium-ventures'].usd +" USD"; 
     })
 

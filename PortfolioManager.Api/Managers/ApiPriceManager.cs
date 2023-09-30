@@ -19,7 +19,7 @@ namespace PortfolioManager.Api.Managers
     {
 
         private readonly IHttpClientFactory _httpClientFactory;
-        private const string metalApiKey = "3667754A97583BBA6F4E8EEC1AE9E24C06DF1C5E";
+        private const string metalApiKey = ApiOptions.freeGoldPriceApiKey;
 
         public ApiPriceManager(IHttpClientFactory httpClientFactory)
         {
@@ -32,7 +32,6 @@ namespace PortfolioManager.Api.Managers
         /// <param name="cryptoName">Name of crypto you want</param>
         /// <param name="currency">Currency in which you want to see the value of cryptos (czk/usd)</param>
         /// <returns>decimal value of crypto price</returns>
-        /// <exception cref="Exception"></exception>
         public async Task<decimal> GetActuallCryptoPriceAsync(string cryptoName = "bitcoin", string currency = "czk")
         {
 
@@ -49,7 +48,6 @@ namespace PortfolioManager.Api.Managers
 
                 if (result is null || result.Count == 0)
                     return 0;
-
 
                 if (currency.Equals("usd",StringComparison.OrdinalIgnoreCase))
                     return result.First().Value.usd;
