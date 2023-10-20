@@ -17,5 +17,6 @@
     <WebStackScaffolding_DbContextTypeFullName>PortfolioManager.Data.PortfolioManagerContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>C:\GitHubZaloha\Portfolio_Manager-main\Portfolio_Manager-main\PortfolioManager\Properties\PublishProfiles\FTPProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

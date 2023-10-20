@@ -1,4 +1,35 @@
-﻿{
+﻿//LOCAL
+//{
+//  "iisSettings": {
+//    "windowsAuthentication": false,
+//    "anonymousAuthentication": true,
+//    "iisExpress": {
+//      "applicationUrl": "http://portfoliomanager.aspifyhost.cz",
+//      "sslPort": 44355
+//    }
+//  },
+//  "profiles": {
+//    "PortfolioManager": {
+//      "commandName": "Project",
+//      "dotnetRunMessages": true,
+//      "launchBrowser": true,
+//      "applicationUrl": "https://portfoliomanager.aspifyhost.cz;http://portfoliomanager.aspifyhost.cz",
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Production"
+//      }
+//    },
+//    "IIS Express": {
+//      "commandName": "IISExpress",
+//      "launchBrowser": true,
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Production"
+//      }
+//    }
+//  }
+//}
+
+//LOCAL
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,

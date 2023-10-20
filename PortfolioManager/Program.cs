@@ -90,6 +90,13 @@ app.UseRequestLocalization(new RequestLocalizationOptions
 	SupportedUICultures = supportedCultures
 });
 
+app.UseSwagger();
+app.UseSwaggerUI(options =>
+{
+	options.SwaggerEndpoint("crypto/swagger.json", "Portfolio Manager - v1");
+});
+app.UseMigrationsEndPoint();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

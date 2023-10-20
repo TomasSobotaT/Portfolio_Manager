@@ -8,8 +8,9 @@ namespace PortfolioManager.Models
     /// </summary>
     public class RandomPasswordGenerator
     {
-        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789.,!?/#-+";
-        int length = 12;
+        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        string numbers = "123456789";
+        string symbols = ".,!?/#-+";
 
 
         /// <summary>
@@ -19,11 +20,22 @@ namespace PortfolioManager.Models
         public string Generate()
         {
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < 9; i++)
             {
                 int randomNumber = RandomNumberGenerator.GetInt32(alphabet.Length);
                 sb.Append(alphabet[randomNumber]);
             }
+            for (int i = 0; i < 2; i++)
+            {
+                int randomNumber = RandomNumberGenerator.GetInt32(numbers.Length);
+                sb.Append(numbers[randomNumber]);
+            }
+            for (int i = 0; i < 1; i++)
+            {
+                int randomNumber = RandomNumberGenerator.GetInt32(symbols.Length);
+                sb.Append(symbols[randomNumber]);
+            }
+
 
             return sb.ToString();
 

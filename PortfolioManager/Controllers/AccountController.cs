@@ -89,6 +89,7 @@ namespace PortfolioManager.Controllers
 			ViewData["ReturnUrl"] = returnUrl;
 
 
+            try { 
             if (!ModelState.IsValid)
                 return View(registerViewModel);
 
@@ -106,6 +107,14 @@ namespace PortfolioManager.Controllers
 				{
 					ModelState.AddModelError("", error.Description);
 				}
+            }
+
+            catch(Exception ex) {
+
+               
+                return BadRequest(ex.ToString());
+
+            }
 			
 
 			return View(registerViewModel);
